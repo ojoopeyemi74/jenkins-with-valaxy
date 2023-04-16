@@ -1,0 +1,14 @@
+---
+
+- hosts: 172.31.4.180
+  pre_tasks:
+  - name: create docker image
+    command: docker build -t regapps:latest .
+    args:
+      chdir: /opt/docker
+
+  - name: create tag to push image onto dockerhub
+    command: docker tag regapps:latest opeyemiojo/regapps:latest
+
+  - name: push docker image
+    command: docker push opeyemiojo/regapps:latest
