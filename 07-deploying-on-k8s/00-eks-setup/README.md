@@ -63,4 +63,4 @@ eksctl create cluster --name opeyemi-cluster \
 NOTE: by default the cluster will be created with 2 nodes
 
 # to delete cluster 
-eksctl delete cluster opeyemi-cluster region eu-west-2
+eksctl delete cluster opeyemi-clusteor --region eu-west-2

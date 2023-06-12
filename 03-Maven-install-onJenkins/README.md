@@ -6,7 +6,8 @@ https://maven.apache.org/download.cgi
 you can download it on the /opt folder
 cd /opt
 
-wget https://dlcdn.apache.org/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz
+ 
+wget https://dlcdn.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz
 
 # next: we extract our download using 
 
@@ -14,13 +15,7 @@ tar -xvzf apache-maven-3.9.1-bin.tar.gz
 
 # we could rename it to maven for easier identification
 
-mv apache-maven-3.9.1-bin.tar.gz maven
-
-# set the variable for maven
-
-cd~
-nano .bashrc
-
+ 
 
 # we also need to add java variable to the .bashrc
 cd~
@@ -30,7 +25,14 @@ cd /usr/lib/jvm
 
 find / -name java-11*
 
+# set the variable for maven
+
+cd~
+nano .bashrc
+
+
 we copy /usr/lib/jvm/java-11-openjdk-amd64 and paste it in the .bashrc folder 
+
 
 ```
 M2_HOME=/opt/maven
@@ -59,3 +61,5 @@ MAVEN_HOME: /opt/maven
 
 Apply and Save
 
+
+/usr/lib/jvm/java-11-openjdk-11.0.19.0.7-1.amzn2.0.1.x86_64
